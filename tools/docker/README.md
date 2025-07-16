@@ -13,7 +13,7 @@
 Use the following command to create a docker image and tag it with `libreelec`.
 
 ```
-docker build --pull -t libreelec tools/docker/jammy
+docker build --pull --network host -t libreelec tools/docker/jammy
 ```
 
 See https://docs.docker.com/engine/reference/commandline/build/ for details on `docker build` usage.
@@ -36,7 +36,7 @@ docker run --rm --log-driver none -v `pwd`:/build -w /build -it libreelec make i
 Use `--env`, `-e` or `--env-file` to pass environment variables used by the LibreELEC buildsystem.
 
 ```
-docker run --rm --log-driver none -v `pwd`:/build -w /build -it -e PROJECT=RPi -e DEVICE=RPi4 -e ARCH=arm libreelec make image
+docker run --rm --log-driver none --name lakka --network kind -u $(id -u):$(id -g) -v `pwd`:/build -w /build -it -e PROJECT=L4T -e DEVICE=Switch -e ARCH=aarch64 -e THREADCOUNT=4 -d libreelec make image
 ```
 
 See https://docs.docker.com/engine/reference/commandline/run/ for details on `docker run` usage.
