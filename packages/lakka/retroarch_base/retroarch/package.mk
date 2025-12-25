@@ -195,6 +195,7 @@ makeinstall_target() {
   echo 'log_dir = "/storage/logfiles"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'recording_output_directory = "/storage/recordings"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'menu_driver = "xmb"' >> ${INSTALL}/etc/retroarch.cfg
+  echo 'user_language = "12"' >> ${INSTALL}/etc/retroarch.cfg
 
   # Power settings
   # Use ondemand for all RPi devices (for backwards compatibility?)
@@ -220,11 +221,13 @@ makeinstall_target() {
   echo 'video_smooth = "false"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'video_aspect_ratio_auto = "true"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'video_threaded = "true"' >> ${INSTALL}/etc/retroarch.cfg
-  echo 'video_font_path = "/tmp/assets/xmb/monochrome/font.ttf"' >> ${INSTALL}/etc/retroarch.cfg
+  echo 'video_font_path = "/tmp/assets/pkg/chinese-fallback-font.ttf"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'video_font_size = "32"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'video_filter_dir = "/usr/share/video_filters"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'video_gpu_screenshot = "false"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'video_fullscreen = "true"' >> ${INSTALL}/etc/retroarch.cfg
+  echo 'ozone_font = "/tmp/assets/pkg/chinese-fallback-font.ttf"' >> ${INSTALL}/etc/retroarch.cfg
+  echo 'xmb_font = "/tmp/assets/pkg/chinese-fallback-font.ttf"' >> ${INSTALL}/etc/retroarch.cfg
 
   # Audio
   echo 'audio_driver = "alsathread"' >> ${INSTALL}/etc/retroarch.cfg
@@ -251,6 +254,7 @@ makeinstall_target() {
   echo 'menu_core_enable = "false"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'thumbnails_directory = "/storage/thumbnails"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'menu_show_advanced_settings = "false"' >> ${INSTALL}/etc/retroarch.cfg
+  echo 'menu_swap_ok_cancel_buttons = "false"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'menu_wallpaper_opacity = "1.0"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'content_show_images = "false"' >> ${INSTALL}/etc/retroarch.cfg
   echo 'content_show_music = "false"' >> ${INSTALL}/etc/retroarch.cfg
