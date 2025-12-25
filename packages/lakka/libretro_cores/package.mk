@@ -7,184 +7,31 @@ PKG_LONGDESC="Root package used to select libretro cores"
 # List of libretro cores
 LIBRETRO_CORES="\
                 2048 \
-                81 \
-                a5200 \
-                amiarcadia \
-                amiberry \
-                anarch \
-                ardens \
-                atari800 \
-                b2 \
-                beetle_bsnes \
-                beetle_lynx \
-                beetle_ngp \
-                beetle_pce \
-                beetle_pce_fast \
-                beetle_pcfx \
-                beetle_psx \
-                beetle_saturn \
-                beetle_supafaust \
-                beetle_supergrafx \
-                beetle_vb \
-                beetle_wswan \
-                blastem \
-                bluemsx \
-                bnes \
-                boom3 \
-                bsnes \
-                bsnes2014 \
-                bsnes_hd \
-                bsnes_jg \
-                bsnes_mercury \
-                cannonball \
-                cap32 \
-                chailove \
                 citra \
-                clownmdemu \
-                craft \
-                crocods \
-                daphne \
                 desmume \
-                desmume_2015 \
-                dice \
-                dinothawr \
-                dirksimple \
                 dolphin \
                 dosbox \
-                dosbox_core \
-                dosbox_pure \
-                dosbox_svn \
-                doublecherrygb \
-                doukutsu_rs \
                 easyrpg \
-                emux_sms\
-                ecwolf \
-                ep128emu \
-                fake_08 \
-                fbalpha2012 \
                 fbneo \
-                fceumm \
                 flycast \
-                fmsx \
-                freechaf \
-                freeintv \
-                fuse_libretro \
-                gam4980 \
-                gambatte \
-                gearboy \
-                geargrafx \
-                gearlynx \
-                gearsystem \
                 genesis_plus_gx \
-                genesis_plus_gx_wide \
-                geolith \
-                gme \
                 gpsp \
-                gw_libretro \
-                handy \
-                hatari \
-                higan_sfc \
-                higan_sfc_balanced \
-                jaxe \
-                jumpnbump \
-                kronos \
-                lowres_nx \
-                lr_moonlight \
                 lrps2 \
-                lutro \
-                m2000 \
-                mame \
-                mame2000 \
                 mame2003_plus \
-                mame2010 \
-                mame2015 \
                 melonds \
-                melondsds \
-                meowpc98 \
                 mesen \
-                mesen_s \
-                mgba \
-                mgba_fork \
-                mojozork \
-                mrboom \
-                mu \
-                mupen64plus_next \
-                neocd \
                 nestopia \
-                noods \
-                np2kai \
-                numero \
-                nxengine \
-                o2em \
-                openlara \
-                opera \
                 panda3ds \
-                parallel_n64 \
-                pcsx_rearmed \
-                pd777 \
                 picodrive \
-                play \
-                pocketcdg \
-                pokemini \
-                potator \
                 ppsspp \
-                prboom \
-                prosystem \
-                puae \
-                puae2021 \
-                px68k \
-                pzretro \
-                quasi88 \
-                quicknes \
-                race \
-                reminiscence \
-                retro8 \
-                same_cdi \
-                sameboy \
-                sameduck \
-                scummvm \
-                skyemu \
                 snes9x \
-                snes9x2002 \
-                snes9x2005 \
-                snes9x2005_plus \
-                snes9x2010 \
-                stella \
-                stella2014 \
-                superbroswar \
-                swanstation \
-                tamalibretro \
-                tgbdual \
-                theodore \
-                thepowdertoy \
-                tic80 \
-                tyrquake \
-                uae4arm \
-                uzem \
                 vbam \
-                vecx \
-                vice \
-                vircon32 \
-                virtualjaguar \
-                virtualxt \
-                vitaquake2 \
-                vitaquake3 \
-                wasm4 \
-                xmil \
-                xrick \
-                yabasanshiro \
                 yabause \
                "
 
 # List of libretro cores to start compiling as
 # early as possible, as they take longer to compile
 EARLY_START_LR_CORES="\
-                      mame \
-                      scummvm \
-                      mame2015 \
-                      mame2010 \
-                      same_cdi \
-                      vice \
                       dolphin \
                       ppsspp \
                       panda3ds \

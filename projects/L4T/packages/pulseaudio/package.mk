@@ -17,7 +17,7 @@ if [ "${PROJECT}" = "L4T" ]; then
 fi
 
 if [ "${BLUETOOTH_SUPPORT}" = "yes" ]; then
-  PKG_DEPENDS_TARGET+=" sbc"
+  PKG_DEPENDS_TARGET+=" sbc bluez "
   PKG_PULSEAUDIO_BLUETOOTH="-Dbluez5=true"
 else
   PKG_PULSEAUDIO_BLUETOOTH="-Dbluez5=false"

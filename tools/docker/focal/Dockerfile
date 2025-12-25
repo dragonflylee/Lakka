@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     wget bash bc gcc-10 sed patch patchutils tar bzip2 gzip xz-utils zstd perl gawk gperf zip \
       unzip diffutils lzop make file g++-10 xfonts-utils xsltproc default-jre-headless python3 \
       libc6-dev libncurses5-dev libjson-perl libxml-parser-perl libparse-yapp-perl rdfind \
-      golang-1.20-go git openssh-client rsync \
+      golang-1.20-go git openssh-client curl rsync \
     --no-install-recommends \
  && ln -s /usr/lib/go-1.20 /usr/lib/go \
  && ln -s /usr/lib/go-1.20/bin/go /usr/bin/go \
